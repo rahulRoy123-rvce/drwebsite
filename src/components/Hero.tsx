@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
             64 Publications in International Medical Journals on Yoga and Ayurveda.
           </p>
           <p>
-            Received Best Award by American Diabetes Association for "Diabetes Prevention through Yoga-Based Life Style" at San Francisco, 2019.
+            Received Best Award by American Diabetes Association for &quot;Diabetes Prevention through Yoga-Based Life Style&quot; at San Francisco, 2019.
           </p>
         </div>
 
