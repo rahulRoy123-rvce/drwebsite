@@ -1,12 +1,138 @@
 import React from 'react';
+import { cn } from '@/lib/utils';
 
 const ProfessionalPage: React.FC = () => {
-    return (
-        <div>
-            <h1>Professional Page</h1>
-            <p>Welcome to the professional page. This is a demo page.</p>
-        </div>
-    );
+  const features = [
+    {
+      title: "Integrative Medical Consultant",
+      description:
+        "Working as an Integrative Medical Consultant in VYASA Integrative Centre, Bangalore from 2013 to till date.",
+      number: 1,
+    },
+    {
+      title: "Research Associate",
+      description:
+        "Working as Research associate on Diabetes Control Project of CCRYN, Department of AYUSH, Govt. of India from Dec 2016 to till date.",
+      number: 2,
+    },
+    {
+      title: "Senior Research Fellow",
+      description:
+        "Senior Research fellow, AYUSH Projects, SVYASA University, Bangalore from Jan 2012 to till date.",
+      number: 3,
+    },
+    {
+      title: "Ayurveda and Yoga Therapy Consultant",
+      description:
+        "Ayurveda and Yoga Therapy consultant in a 250-bed holistic health home (Hospital) of VYASA from 2011 to till date.",
+      number: 4,
+    },
+    {
+      title: "Postings Field Training Co-ordinator",
+      description:
+        "Postings field training Co-ordinator for MD (Doctor of Medicine), PhD, MSc, Programs of SVYASA University, Bangalore from 2011 to till date.",
+      number: 5,
+    },
+    {
+      title: "Guest Faculty",
+      description:
+        "Working as a guest faculty for Wasabi Yoga and Wellness – a Unit of Wabi-Sabi, Singapore from June 2008 to till date.",
+      number: 6,
+    },
+    {
+      title: "Trainee (Junior Doctor) - Narayana Multispeciality Hospital",
+      description:
+        "Posted as a trainee (Junior Doctor) in Narayana Multispeciality Hospital (a 5000-bed hospital) for 8 months in different departments under super specialized physicians for Doctor of Medicine in Yoga & Rehabilitation.",
+      number: 7,
+    },
+    {
+      title: "Trainee (Junior Doctor) - SPARSH Orthopedic Hospital",
+      description:
+        "Posted as a trainee (Junior Doctor) in SPARSH Orthopedic Hospital (a 100-bed hospital) for 1 month for Doctor of Medicine in Yoga & Rehabilitation.",
+      number: 8,
+    },
+    {
+      title: "Trainee (Junior Doctor) - NIMHANS",
+      description:
+        "Posted as a trainee (Junior Doctor) in National Institute of Mental Health and Neurological Sciences (NIMHANS) – The largest psychiatric unit of India, for 2½ months in different departments under super specialized physicians for Doctor of Medicine in Yoga & Rehabilitation.",
+      number: 9,
+    },
+    {
+      title: "Internship in Hospitals",
+      description:
+        "Worked as internee for a period of one year in western and ayurvedic hospitals (2006-2007).",
+      number: 10,
+    },
+    {
+      title: "Scientific Committee Volunteer (17th INCOFYRA)",
+      description:
+        "Worked as Volunteer in the scientific committee for organizing the 17th International Conference on Frontiers of Yoga Research and its Applications in 2007.",
+      number: 11,
+    },
+    {
+      title: "Scientific Committee Volunteer (18th INCOFYRA)",
+      description:
+        "Worked as Volunteer in the scientific committee for organizing the 18th International Conference on Frontiers of Yoga Research and its Applications in 2009.",
+      number: 12,
+    },
+    {
+      title: "Pre-conference Coordinator",
+      description:
+        "Worked as a pre-conference coordinator for International Conference of Yoga and Naturopathy, organized by Dept. of AYUSH and Govt. of Karnataka in 2012.",
+      number: 13,
+    },
+  ];
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
+      {features.map((feature, index) => (
+        <Feature key={feature.title} {...feature} index={index} />
+      ))}
+    </div>
+  );
 };
 
 export default ProfessionalPage;
+
+const Feature = ({
+  title,
+  description,
+  number,
+  index,
+}: {
+  title: string;
+  description: string;
+  number: number;
+  index: number;
+}) => {
+  return (
+    <div
+      className={cn(
+        "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800",
+        (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
+        index < 4 && "lg:border-b dark:border-neutral-800"
+      )}
+    >
+      {index < 4 && (
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+      )}
+      {index >= 4 && (
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+      )}
+      <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
+        <span className="text-4xl font-bold text-blue-500 dark:text-blue-400">
+          {number}
+        </span>
+      </div>
+      <div className="text-lg font-bold mb-2 relative z-10 px-10">
+        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+        <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+          {title}
+        </span>
+      </div>
+      <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+        {description}
+      </p>
+    </div>
+  );
+};

@@ -8,6 +8,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import About from "@/components/About";
+import { TimelineDemo } from "@/components/Timeline";
 
 export const metadata: Metadata = {
   title: "About | John Doe",
@@ -24,6 +25,7 @@ export default function AboutPage() {
   ];
   return (
     <Container>
+      <TimelineDemo/>
       <span className="text-4xl">💬</span>
       <Heading className="font-black">About Me</Heading>
       <About />
