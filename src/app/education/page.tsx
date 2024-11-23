@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 
-export function Education() {
+export function education() {
   const data = [
     {
       title: "Doctor of Medicine in Yoga & Rehabilitation",
@@ -128,4 +128,4 @@ export function Education() {
   );
 }
 
-export default Education;
+export default education;
