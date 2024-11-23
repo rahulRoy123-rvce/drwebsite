@@ -1,9 +1,9 @@
-// use "client";
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 
-export function education() {
+const Education = () => {
   const data = [
     {
       title: "Doctor of Medicine in Yoga & Rehabilitation",
@@ -126,6 +126,6 @@ export function education() {
       <Timeline data={data} />
     </div>
   );
-}
+};
 
-export default education;
+export default Education;
