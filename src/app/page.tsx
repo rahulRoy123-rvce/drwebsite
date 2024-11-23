@@ -17,29 +17,27 @@ import { Research } from "@/components/Research";
 import {AppleCardsCarouselDemo} from "@/components/WorkEx";
 // import { BentoGridDemo } from "@/components/Education";
 import src1 from "@/public/images/about.webp";
+import { SpecialisationDemo } from "@/components/Specialisatio";
 export default function Home() {
   return (
     <Container>
       {/* <HeroScrollDemo/> */}
 
       <HeroSection/> 
-      <Research/>
+      {/* <FloatingDockDemo/>  */}
+      
       {/* <AnimatedPinDemo/>  */}
-      {/* <FloatingDockDemo/> */}
-      <Heading
-        as="h2"
-        className="font-black text-lg md:text-lg lg:text-lg mt-20 mb-4"
-      >
-       Research Work
-      </Heading>
+      {/* <FloatingDockDemo/>  */}
+      
+      <Research/>
       {/* <Research/> */}
       <AppleCardsCarouselDemo/>
       <BentoGridDemo/>
       <TabsDemo/>
-      <BentoGridDemo/>
-      <Products />
+      <SpecialisationDemo/>
+      {/* <Products /> */}
       
-      <TechStack />
+      {/* <TechStack /> */}
     </Container>
   );
 }

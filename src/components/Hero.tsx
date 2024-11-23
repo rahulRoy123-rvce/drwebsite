@@ -1,9 +1,10 @@
 import React from "react";
 import src1 from "../assets/pic10.jpg"; // Ensure this path is correct
-
+import { FloatingDockDemo } from "./FloatingDemo";
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen bg-gradient-to-r from-green-50 via-white to-green-50 px-6 sm:px-8 lg:px-16 py-10">
+    <div className ="flex-row">
+    <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen  px-6 sm:px-8 lg:px-16 py-10">
       {/* Left Section */}
       <div className="flex flex-col items-start max-w-xl space-y-6">
         {/* Title */}
@@ -104,7 +105,12 @@ const HeroSection: React.FC = () => {
           <div className="absolute top-2 -left-6 w-[350px] h-[350px] md:w-[450px] md:h-[450px] bg-green-100 rounded-full -z-10"></div>
         </div>
       </div>
+      
     </section>
+    <section>
+    <FloatingDockDemo/>
+    </section>
+    </div>
   );
 };
 
