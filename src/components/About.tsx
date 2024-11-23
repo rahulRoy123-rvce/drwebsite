@@ -22,7 +22,7 @@ export default function About() {
           Committees for Diabetes and Cancer Prevention and Management
           programs, as well as a Yoga Therapy Consultant for the National
           Health Mission Maharashtra. He has also contributed to the AYUSH
-          Video CME on "Yoga for All AYUSH Doctors," conducted by the
+          Video CME on &quot;Yoga for All AYUSH Doctors,&quot; conducted by the
           Telemedicine Department NHM, Mumbai.
         </Paragraph>
         <Paragraph className="mt-6">
@@ -36,10 +36,10 @@ export default function About() {
         <Paragraph className="mt-6">
           Motivated by his early experiences, Dr. Amit pursued his Bachelor of
           Ayurvedic Medicine and Surgery (BAMS) at Rajiv Gandhi University of
-          Health Sciences (RGUHS), one of India's leading medical universities.
-          After practicing Ayurveda, he realized that while Ayurveda cleanses
-          and cures the physical body, treating the mind and soul requires a
-          deeper understanding of Yoga.
+          Health Sciences (RGUHS), one of India&apos;s leading medical
+          universities. After practicing Ayurveda, he realized that while
+          Ayurveda cleanses and cures the physical body, treating the mind and
+          soul requires a deeper understanding of Yoga.
         </Paragraph>
         <Paragraph className="mt-6">
           To deepen his expertise, Dr. Amit earned an MD in Yoga and
@@ -50,13 +50,13 @@ export default function About() {
           achieving exceptional results.
         </Paragraph>
         <Paragraph className="mt-6">
-          Dr. Amit’s areas of specialization include:
+          Dr. Amit&apos;s areas of specialization include:
           <ul className="list-disc list-inside mt-2 space-y-1">
             <li>Ayurvedic Medicine (RGUHS)*</li>
-            <li>Counseling & Psychology (Kuvempu University)*</li>
-            <li>Diet & Nutrition</li>
+            <li>Counseling &amp; Psychology (Kuvempu University)*</li>
+            <li>Diet &amp; Nutrition</li>
             <li>Yoga Counseling</li>
-            <li>Yoga Therapy & Rehabilitation (SVYASA)*</li>
+            <li>Yoga Therapy &amp; Rehabilitation (SVYASA)*</li>
             <li>Panchakarma</li>
           </ul>
         </Paragraph>
