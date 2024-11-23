@@ -18,6 +18,7 @@ import {AppleCardsCarouselDemo} from "@/components/WorkEx";
 // import { BentoGridDemo } from "@/components/Education";
 import src1 from "@/public/images/about.webp";
 import { SpecialisationDemo } from "@/components/Specialisatio";
+// import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <Container>
@@ -38,6 +39,7 @@ export default function Home() {
       {/* <Products /> */}
       
       {/* <TechStack /> */}
+      
     </Container>
   );
 }
