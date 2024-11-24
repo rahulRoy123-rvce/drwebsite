@@ -132,10 +132,14 @@ const Education = () => {
 
   return (
     <div className="w-full">
-      <div className=" text-8xl font-sans font-extrabold max-w-7xl mx-auto py-6 px-4 md:px-8 lg:px-10">
-        <div className="font-bold md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my journey
-        </div>
+      <div className=" text-4xl font-sans font-extrabold max-w-7xl mx-auto py-6 px-4 md:px-8 lg:px-10">
+      <div
+  className="font-bold text-sm sm:text-base md:text-lg lg:text-2xl xl:text-4xl mb-4 text-black dark:text-white max-w-4xl text-center md:text-left"
+>
+  Changelog from my journey
+</div>
+
+
         <div className="text-neutral-700  dark:text-neutral-300 md:text-base max-w-sm">
           I&apos;ve 15 YEARS OF TEACHING AND CLINICAL EXPERIENCE.
         </div>

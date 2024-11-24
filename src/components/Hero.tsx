@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import { FC } from 'react';
-import { FloatingDockDemo } from './FloatingDemo';
+import Image from "next/image";
+import { FC } from "react";
+import { FloatingDockDemo } from "./FloatingDemo";
 
 const HeroSection: FC = () => {
   return (
@@ -42,7 +42,7 @@ const HeroSection: FC = () => {
               width={400}
               src="/images/pic14_bg.png" // Ensure the image path is correct
               alt="Dr. Amit Singh"
-              className="rounded-lg object-cover "
+              className="rounded-lg object-cover"
               priority={true}
             />
           </div>
@@ -50,9 +50,14 @@ const HeroSection: FC = () => {
       </section>
 
       {/* Floating Dock Section */}
-      <section>
-        <FloatingDockDemo />
+      <section className="relative w-full  dark:bg-neutral-900 py-12 px-4 md:px-8 lg:px-16">
+        <div className="max-w-6xl mx-auto flex items-center justify-center">
+          <FloatingDockDemo />
+        </div>
       </section>
+
+      {/* Additional Space Before Next Section */}
+      <div className="h-10 md:h-16"></div>
     </div>
   );
 };

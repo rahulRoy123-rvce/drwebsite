@@ -42,10 +42,30 @@ const WorkshopsPage: React.FC = () => {
   ];
 
   return (
+    <div>
+      <section className="text-gray-600 body-font">
+      <div
+  className="container item-center justify-center"
+>
+  <img
+    className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded container mt-16 mx-auto flex px-5 py-24 items-center justify-center flex-col rounded-lg shadow-lg bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-600 transition duration-300 hover:shadow-2xl hover:scale-105"
+    alt="hero"
+    src="/images/prof.png"
+  />
+ <div className="flex items-center justify-center text-center lg:w-2/3 w-full">
+  <h1 className="title-font font-bold sm:text-4xl text-3xl mb-4 text-gray-900 dark:text-white">
+    Workshops
+  </h1>
+</div>
+
+</div>
+
+      </section>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
+    </div>
     </div>
   );
 };
