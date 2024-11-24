@@ -140,7 +140,7 @@ const Education = () => {
 </div>
 
 
-        <div className="text-neutral-700  dark:text-neutral-300 md:text-base max-w-sm">
+        <div className="text-neutral-700  dark:text-neutral-800 md:text-base max-w-sm">
           I&apos;ve 15 YEARS OF TEACHING AND CLINICAL EXPERIENCE.
         </div>
       </div>

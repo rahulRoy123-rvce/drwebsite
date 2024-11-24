@@ -95,7 +95,7 @@ const ProfessionalPage: React.FC = () => {
     src="/images/prof.png"
   />
  <div className="flex items-center justify-center text-center lg:w-2/3 w-full">
-  <h1 className="title-font font-bold sm:text-4xl text-3xl mb-4 text-gray-900 dark:text-white">
+  <h1 className="title-font font-bold sm:text-4xl text-3xl mb-4 text-gray-900">
     Professional Experience
   </h1>
 </div>
@@ -146,11 +146,11 @@ const Feature = ({
       </div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
         <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
-        <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+        <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800">
           {title}
         </span>
       </div>
-      <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+      <p className="text-sm text-neutral-600 max-w-xs relative z-10 px-10">
         {description}
       </p>
     </div>
