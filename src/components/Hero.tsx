@@ -50,7 +50,7 @@ const HeroSection: FC = () => {
       </section>
 
       {/* Floating Dock Section */}
-      <section className="relative w-full  dark:bg-neutral-900 py-12 px-4 md:px-8 lg:px-16">
+      <section className="relative w-full py-12 px-4 md:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto flex items-center justify-center">
           <FloatingDockDemo />
         </div>
