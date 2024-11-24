@@ -24,7 +24,7 @@ function Navbar({ className }: { className?: string }) {
       )}
     >
       {/* Logo or Branding */}
-      <div className="text-lg font-bold">Dr. Amit Singh</div>
+      <div className="text-lg font-bold"><a href="/">Dr. Amit Singh</a></div>
 
       {/* Hamburger Icon for Mobile */}
       <button

@@ -33,6 +33,11 @@ const HeroSection: FC = () => {
               <li>Teaching Faculty in VaYU, USAYMU, China.</li>
               <li>64 Publications in International Medical Journals on Yoga and Ayurveda.</li>
             </ul>
+            <a href="/contact" className="flex justify-center items-center mt-10">
+        <button className="shadow-[inset_0_0_0_2px_#616467] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200">
+          Contact Me
+        </button>
+      </a>
           </div>
 
           {/* Right Section - Image */}
@@ -47,6 +52,7 @@ const HeroSection: FC = () => {
             />
           </div>
         </div>
+
       </section>
 
       {/* Floating Dock Section */}

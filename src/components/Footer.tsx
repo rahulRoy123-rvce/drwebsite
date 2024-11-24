@@ -1,11 +1,14 @@
 "use client";
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 
 export const Footer = () => {
   const scrollToTop = () => {
-    if (typeof window !== 'undefined') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Ensures smooth scrolling
+      });
     }
   };
 
@@ -16,7 +19,7 @@ export const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-xl font-bold mb-4">Dr. Amit Singh</h3>
           <Image
-            src="/images/dr_amit_singh.jpg" // Replace with actual image path
+            src="/images/pic10.jpg" // Replace with actual image path
             alt="Dr. Amit Singh"
             width={100}
             height={100}
@@ -54,11 +57,12 @@ export const Footer = () => {
             SVYASA Yoga University Prashanti Kutiram, Jigani Hobli, Anekal Taluk,
             Bangalore (Karnataka), India - 560019.
           </p>
-          <p className="text-neutral-400 mt-4">
-            Phone: +91 9341854502
-          </p>
+          <p className="text-neutral-400 mt-4">Phone: +91 9341854502</p>
           <p className="text-neutral-400">
-            E-mail: <a href="mailto:dramits90@gmail.com" className="text-blue-400">dramits90@gmail.com</a>
+            E-mail:{" "}
+            <a href="mailto:dramits90@gmail.com" className="text-blue-400">
+              dramits90@gmail.com
+            </a>
           </p>
         </div>
       </div>
@@ -80,5 +84,3 @@ export const Footer = () => {
 };
 
 export default Footer;
-
-// Tailwind CSS styles are used to make the Footer component responsive and consistent with the Hero section.
