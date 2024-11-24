@@ -8,26 +8,31 @@ const Education = () => {
     {
       title: "Doctor of Medicine in Yoga & Rehabilitation",
       content: (
-        <div>
-          <Image
-            src="/images/education1.jpg" // Replace with your image path
-            alt="MD in Yoga & Rehabilitation"
-            width={800}
-            height={600}
-            className="mb-8"
-          />
-          <p className="text-justify text-lg leading-relaxed">
-            MD (Y&R) from SVYASA University, completed in January 2019.
-          </p>
-        </div>
+       <div
+  className="p-6 rounded-lg shadow-lg bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-600 
+  transition duration-300 hover:shadow-2xl hover:scale-105"
+>
+  <Image
+    src="/images/pic10.jpg" // Replace with your image path
+    alt="MD in Yoga & Rehabilitation"
+    width={800}
+    height={600}
+    className="mb-8 rounded-lg"
+  />
+  <p className="text-justify text-lg leading-relaxed text-gray-800 dark:text-gray-300">
+    MD (Y&R) from SVYASA University, completed in January 2019.
+  </p>
+</div>
+
       ),
     },
     {
       title: "Bachelor in Ayurvedic Medicine and Surgery (BAMS)",
       content: (
-        <div>
+        <div  className="p-6 rounded-lg shadow-lg bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-600 
+        transition duration-300 hover:shadow-2xl hover:scale-105">
           <Image
-            src="/images/education2.jpg" // Replace with your image path
+            src="/images/pic11.jpg" // Replace with your image path
             alt="Bachelor in Ayurvedic Medicine and Surgery"
             width={800}
             height={600}
@@ -43,9 +48,10 @@ const Education = () => {
     {
       title: "PhD (Yoga)",
       content: (
-        <div>
+        <div  className="p-6 rounded-lg shadow-lg bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-600 
+        transition duration-300 hover:shadow-2xl hover:scale-105">
           <Image
-            src="/images/education3.jpg" // Replace with your image path
+            src="/images/pic12.jpg" // Replace with your image path
             alt="PhD (Yoga)"
             width={800}
             height={600}
@@ -61,9 +67,10 @@ const Education = () => {
     {
       title: "Yoga Therapy Orientation Training",
       content: (
-        <div>
+        <div  className="p-6 rounded-lg shadow-lg bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-600 
+        transition duration-300 hover:shadow-2xl hover:scale-105">
           <Image
-            src="/images/education4.jpg" // Replace with your image path
+            src="/images/pic17.jpg" // Replace with your image path
             alt="Yoga Therapy Orientation Training"
             width={800}
             height={600}
@@ -79,9 +86,10 @@ const Education = () => {
     {
       title: "Yoga Instructor's Course",
       content: (
-        <div>
+        <div  className="p-6 rounded-lg shadow-lg bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-600 
+        transition duration-300 hover:shadow-2xl hover:scale-105">
           <Image
-            src="/images/education5.jpg" // Replace with your image path
+            src="/images/pic21.jpg" // Replace with your image path
             alt="Yoga Instructor's Course"
             width={800}
             height={600}
@@ -97,9 +105,10 @@ const Education = () => {
     {
       title: "Memberships",
       content: (
-        <div>
+        <div  className="p-6 rounded-lg shadow-lg bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-600 
+        transition duration-300 hover:shadow-2xl hover:scale-105">
           <Image
-            src="/images/education6.jpg" // Replace with your image path
+            src="/images/pic27.png" // Replace with your image path
             alt="Memberships"
             width={800}
             height={600}
@@ -123,6 +132,14 @@ const Education = () => {
 
   return (
     <div className="w-full">
+      <div className=" text-8xl font-sans font-extrabold max-w-7xl mx-auto py-6 px-4 md:px-8 lg:px-10">
+        <div className="font-bold md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+          Changelog from my journey
+        </div>
+        <div className="text-neutral-700  dark:text-neutral-300 md:text-base max-w-sm">
+          I&apos;ve 15 YEARS OF TEACHING AND CLINICAL EXPERIENCE.
+        </div>
+      </div>
       <Timeline data={data} />
     </div>
   );

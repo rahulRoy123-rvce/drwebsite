@@ -34,7 +34,7 @@ export default function Home() {
       {/* <Research/> */}
       <AppleCardsCarouselDemo/>
       <BentoGridDemo/>
-      <TabsDemo/>
+      {/* <TabsDemo/> */}
       <SpecialisationDemo/>
       {/* <Products /> */}
       

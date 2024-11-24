@@ -42,7 +42,7 @@ const HeroSection: FC = () => {
               width={400}
               src="/images/pic14_bg.png" // Ensure the image path is correct
               alt="Dr. Amit Singh"
-              className="rounded-lg object-cover shadow-md"
+              className="rounded-lg object-cover "
               priority={true}
             />
           </div>
