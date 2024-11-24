@@ -46,10 +46,10 @@ function Navbar({ className }: { className?: string }) {
           {/* Home item without hover functionality */}
           <div
             className={cn(
-              "px-4 lg:py-0 lg:px-3 cursor-pointer hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-600"
+              "text- lg:py-0 lg:px-3 cursor-pointer lg:hover:text-gray-600"
             )}
           >
-            <HoveredLink href="/" className="block lg:inline">
+            <HoveredLink href="/" className="lg:inline lg:hover:text-gray-800">
               Home
             </HoveredLink>
           </div>
@@ -57,10 +57,10 @@ function Navbar({ className }: { className?: string }) {
           {/* Biography item without hover functionality */}
           <div
             className={cn(
-              "px-4 lg:py-0 lg:px-3 cursor-pointer hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-600"
+              "text- lg:py-0 lg:px-3 cursor-pointer lg:hover:text-gray-600"
             )}
           >
-            <HoveredLink href="/about" className="block lg:inline">
+            <HoveredLink href="/about" className="lg:inline lg:hover:text-gray-800">
               Biography
             </HoveredLink>
           </div>
@@ -87,10 +87,10 @@ function Navbar({ className }: { className?: string }) {
           {/* Contact item without hover functionality */}
           <div
             className={cn(
-              "px-4 lg:py-0 lg:px-3 cursor-pointer hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-600"
+              " lg:py-0 lg:px-3 cursor-pointer lg:hover:text-gray-600"
             )}
           >
-            <HoveredLink href="/contact" className="block lg:inline">
+            <HoveredLink href="/contact" className="lg:inline lg:hover:text-gray-800">
               Contact
             </HoveredLink>
           </div>
