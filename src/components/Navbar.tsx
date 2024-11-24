@@ -43,16 +43,29 @@ function Navbar({ className }: { className?: string }) {
         )}
       >
         <Menu setActive={setActive}>
-          <MenuItem setActive={setActive} active={active} item="Home">
-            <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-4 space-y-4 lg:space-y-0 text-sm">
-              <HoveredLink href="/">Home</HoveredLink>
-            </div>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Biography">
-            <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-4 space-y-4 lg:space-y-0 text-sm">
-              <HoveredLink href="/about">Biography</HoveredLink>
-            </div>
-          </MenuItem>
+          {/* Home item without hover functionality */}
+          <div
+            className={cn(
+              "px-4 lg:py-0 lg:px-3 cursor-pointer hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-600"
+            )}
+          >
+            <HoveredLink href="/" className="block lg:inline">
+              Home
+            </HoveredLink>
+          </div>
+
+          {/* Biography item without hover functionality */}
+          <div
+            className={cn(
+              "px-4 lg:py-0 lg:px-3 cursor-pointer hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-600"
+            )}
+          >
+            <HoveredLink href="/about" className="block lg:inline">
+              Biography
+            </HoveredLink>
+          </div>
+
+          {/* Education menu item with hover */}
           <MenuItem setActive={setActive} active={active} item="Education">
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-4 space-y-4 lg:space-y-0 text-sm">
               <HoveredLink href="/education">Education</HoveredLink>
@@ -60,6 +73,8 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="/paperPoster">Paper/Poster</HoveredLink>
             </div>
           </MenuItem>
+
+          {/* Experience menu item with hover */}
           <MenuItem setActive={setActive} active={active} item="Experience">
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-4 space-y-4 lg:space-y-0 text-sm">
               <HoveredLink href="/professional">Professional Experience</HoveredLink>
@@ -68,11 +83,17 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="/workshops">Workshops</HoveredLink>
             </div>
           </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Contact">
-            <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-4 space-y-4 lg:space-y-0 text-sm">
-              <HoveredLink href="/contact">Contact</HoveredLink>
-            </div>
-          </MenuItem>
+
+          {/* Contact item without hover functionality */}
+          <div
+            className={cn(
+              "px-4 lg:py-0 lg:px-3 cursor-pointer hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-600"
+            )}
+          >
+            <HoveredLink href="/contact" className="block lg:inline">
+              Contact
+            </HoveredLink>
+          </div>
         </Menu>
       </div>
     </div>
